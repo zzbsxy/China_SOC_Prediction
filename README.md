@@ -27,3 +27,46 @@ conda activate tabtransformer-soc
 Install dependencies
 
 pip install -r requirements.txt
+
+# Key Parameters
+# Model Configuration
+The config/model_config.yaml file contains the following key parameters:
+# TabTransformer Architecture
+
+n_blocks: Number of Transformer blocks (default: 6)
+n_heads: Number of attention heads per block (default: 8)
+dim_model: Dimension of the model (default: 64)
+dim_ffn: Dimension of feed-forward network (default: 128)
+dropout: Dropout rate (default: 0.1)
+attention_dropout: Attention dropout rate (default: 0.1)
+
+# Weighted Loss Function
+
+weights_0_20cm: Dictionary of feature weights for 0-20cm soil layer
+
+tmp: Weight for temperature (default: 0.1161)
+srad: Weight for shortwave radiation (default: 0.3214)
+p_pet: Weight for humidity index (default: 0.3661)
+npp: Weight for net primary productivity (default: 0.1964)
+
+
+weights_0_100cm: Dictionary of feature weights for 0-100cm soil layer
+
+tmp: Weight for temperature (default: 0.1034)
+srad: Weight for shortwave radiation (default: 0.2672)
+p_pet: Weight for humidity index (default: 0.2931)
+npp: Weight for net primary productivity (default: 0.3362)
+
+
+
+# Training Parameters
+
+optimizer: Optimizer type (default: "adam")
+initial_lr: Initial learning rate (default: 1e-4)
+weight_decay: Weight decay rate (default: 1e-4)
+batch_size: Batch size (default: 128)
+epochs: Number of training epochs (default: 100)
+lr_scheduler: Learning rate scheduler (default: "step")
+lr_step_size: Step size for StepLR scheduler (default: 30)
+lr_gamma: Multiplication factor for StepLR scheduler (default: 0.5)
+early_stopping_patience: Patience for early stopping (default: 20)
