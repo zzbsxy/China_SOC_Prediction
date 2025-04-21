@@ -18,14 +18,14 @@ from WT_MSE import TabTransformerWTLoss
 torch.set_default_tensor_type(torch.DoubleTensor)
 
 # Read data
-data = pd.read_excel("your_data_path.xlsx")  # Replace with your actual data path
+data = pd.read_excel("data_path.xlsx")  # Replace with actual data path
 
 # Separate features and target variable
 X = data.drop('SOC (kg C m–2)', axis=1)
 y = data['SOC (kg C m–2)']
 
 # Convert categorical features to numerical encoding
-cat_features = ['Type', 'Soil Type', 'Aspect', 'LULC']  # Modify according to your data
+cat_features = ['Type', 'Soil Type', 'Aspect', 'LULC']  # Modify according to data
 for col in cat_features:
     le = LabelEncoder()
     X[col] = le.fit_transform(X[col])
