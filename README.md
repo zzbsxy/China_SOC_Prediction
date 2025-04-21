@@ -2,6 +2,7 @@
 This repository contains the implementation of TabTransformer_WT, a deep learning model for optimizing the estimation and projection of surface (0-20 cm) and profile (0-100 cm) soil organic carbon (SOC) in China. The model combines TabTransformer architecture with a weighted mean squared error loss function to incorporate prior knowledge of key environmental drivers.
 # Overview
 TabTransformer_WT is a deep learning model designed for SOC prediction and projection across China. The model:
+
 Combines the attention mechanism of Transformer architecture with weighted loss functions
 Incorporates prior knowledge of key environmental drivers
 Achieves higher prediction accuracy compared to traditional machine learning and other deep learning approaches
@@ -12,6 +13,7 @@ This implementation is part of the research work described in "Optimizing estima
 
 # Setting up the environment
 bash
+
 Clone the repository
 
 git clone https://github.com/zzbsxy/China_SOC_Prediction.git
