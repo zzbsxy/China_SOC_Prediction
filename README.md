@@ -13,12 +13,15 @@ This implementation is part of the research work described in "Optimizing estima
 # Setting up the environment
 bash
 Clone the repository
+
 git clone https://github.com/zzbsxy/China_SOC_Prediction.git
 cd TabTransformer-SOC-China
 
 Create a conda environment
+
 conda create -n tabtransformer-soc python=3.7
 conda activate tabtransformer-soc
 
 Install dependencies
+
 pip install -r requirements.txt
