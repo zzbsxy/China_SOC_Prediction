@@ -13,7 +13,7 @@ This implementation is part of the research work described in "Optimizing estima
 # Setting up the environment
 bash
 Clone the repository
-git clone https://github.com/yourusername/TabTransformer-SOC-China.git
+git clone https://github.com/zzbsxy/China_SOC_Prediction.git
 cd TabTransformer-SOC-China
 
 Create a conda environment
