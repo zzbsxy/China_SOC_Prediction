@@ -18,7 +18,7 @@ from WT_MSE import TabTransformerWTLoss
 torch.set_default_tensor_type(torch.DoubleTensor)
 
 # Read data
-data = pd.read_excel("data_path.xlsx")  # Replace with actual data path
+data = pd.read_excel("data_path")  # Replace with actual data path
 
 # Separate features and target variable
 X = data.drop('SOC (kg C m–2)', axis=1)
